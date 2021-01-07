@@ -1,0 +1,38 @@
+<div style="margin-top: 18%;"></div>
+<mat-card class="main-card">
+    <mat-card-header>
+        <span class="example-spacer"></span>
+        <h1 style="color: rgb(91, 177, 51);">Your Order Details</h1>
+        <span class="example-spacer"></span>
+    </mat-card-header>
+    <hr>
+</mat-card>
+
+<br><br>
+
+<!-- <div  *ngFor="let data of db.customer" style="background-color: rgb(141, 216, 107); padding: 1px;border-radius: 1%;">
+    <mat-card *ngFor="let data2 of data.orders" style="background-color: white;margin: 2%;">
+        <mat-card-content>
+            <h2>Order Id: {{data2.id}}</h2>
+            <h3><span style="font-weight: bold;">Item Name:</span>  {{data2.dish}}</h3>
+            <h3><span style="font-weight: bold;">Order Price:</span>  &#8377; {{data2.price}}/-</h3>
+            <h3><span style="font-weight: bold;">Order Status:</span>  {{data2.status}}</h3>
+            <hr>
+        </mat-card-content>
+    </mat-card>
+    
+</div> -->
+
+<div style="background-color: rgb(141, 216, 107); padding: 1px;border-radius: 1%;">
+    <mat-card *ngFor="let data of allOrders" style="background-color: white;margin: 2%;">
+        <mat-card-content>
+            <h2>Order Id: {{data.id}}</h2>
+            <h3><span style="font-weight: bold;">Item Name:</span>  {{data.foodName}}</h3>
+            <h3><span style="font-weight: bold;">Order Price:</span>  &#8377; {{data.foodPrice}}/-</h3>
+            <h3><span style="font-weight: bold;">Chef Name:</span>  {{data.chefName}}</h3>
+            <!-- <h3><span style="font-weight: bold;">Order Status:</span>  {{data.status}}</h3> -->
+            <hr>
+        </mat-card-content>
+    </mat-card>
+    
+</div>

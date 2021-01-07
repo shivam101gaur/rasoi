@@ -1,0 +1,126 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "shivam",
+      "password": "sh1234",
+      "session": false
+    },
+    {
+      "id": 2,
+      "name": "samad",
+      "password": "sh1234",
+      "session": false
+    },
+    {
+      "id": 3,
+      "name": "shaishav",
+      "password": "sh1234",
+      "session": false
+    },
+    {
+      "id": 4,
+      "name": "vamshi",
+      "password": "sh1234",
+      "session": false
+    }
+  ],
+  "chef": [
+    {
+      "id": 1,
+      "name": "sanjeev",
+      "password": "chef1",
+      "session": false
+    },
+    {
+      "id": 2,
+      "name": "ranveer",
+      "password": "chef1",
+      "session": false
+    }
+  ],
+  "food": [
+    {
+      "id": 1,
+      "dish": "Paneer Tikka",
+      "price": 199,
+      "chefID": 1
+    },
+    {
+      "id": 2,
+      "dish": "Moong Daal",
+      "price": 149,
+      "chefID": 1
+    },
+    {
+      "id": 3,
+      "dish": "butter chicken",
+      "price": 399,
+      "chefID": 1
+    },
+    {
+      "id": 4,
+      "dish": "Malia Chicken",
+      "price": 299,
+      "chefID": 2
+    },
+    {
+      "id": 5,
+      "dish": "Dal Tadka",
+      "price": 149,
+      "chefID": 2
+    },
+    {
+      "id": 6,
+      "dish": "Paneer Masala",
+      "price": 299,
+      "chefID": 2
+    }
+  ],
+  "orders": [
+    {
+      "chefName": "sanjeev",
+      "chefID": 1,
+      "customerID": 1,
+      "foodName": "Paneer Tikka",
+      "foodPrice": 199,
+      "status": false,
+      "id": 1
+    },
+    {
+      "chefName": "sanjeev",
+      "chefID": 1,
+      "customerID": 1,
+      "foodName": "Paneer Tikka",
+      "foodPrice": 199,
+      "status": true,
+      "id": 2
+    },
+    {
+      "chefName": "sanjeev",
+      "chefID": 1,
+      "customerID": 1,
+      "foodName": "Paneer Tikka",
+      "foodPrice": 199,
+      "status": false,
+      "id": 3
+    }
+  ],
+  "drones": [
+    {
+      "id": 1,
+      "busy": false,
+      "orderID": null
+    },
+    {
+      "id": 2,
+      "busy": true,
+      "orderID": 2
+    },
+    {
+      "id": 3,
+      "busy": false,
+      "orderID": null
+    }
+  ]
+}

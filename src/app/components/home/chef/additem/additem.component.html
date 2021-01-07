@@ -1,0 +1,31 @@
+<br>
+<mat-card style="width: fit-content;height: fit-content;">
+    <mat-card-title>Add </mat-card-title>   
+    <mat-card-subtitle>New Dish</mat-card-subtitle>
+
+    
+        <form (submit)="addItem(pd_name.value,pd_price.value)">
+
+        
+       <br>
+
+
+        <mat-form-field appearance = "outline">
+            <mat-label>Dish Name</mat-label>
+            <input #pd_name type="text" matInput required autofocus>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Dish Price</mat-label>
+            <input #pd_price type="number" matInput required placeholder="in Rupees">
+        </mat-form-field>
+        <br>
+        
+        
+        <button class="add-btn"mat-raised-button style="float: right;" >Add</button>
+    </form>
+</mat-card>
+    
+    
+    
+    

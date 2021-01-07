@@ -1,0 +1,33 @@
+<mat-card class="main-card" style="margin-left: 3%;">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <img mat-card-image src="../../../../assets/avatar.png" alt="Chef's Photo">
+        <div class="title">
+            <mat-card-title>Chef</mat-card-title>
+            <mat-card-subtitle>
+                <h2>{{chef.name.toUpperCase()}}</h2>
+                <button class="edit-btn" mat-raised-button routerLink="additem"><mat-icon>add</mat-icon>Add Item</button>
+            </mat-card-subtitle>
+        </div>
+
+    </mat-card-header>
+
+    <hr>
+    <mat-card-header>
+        <h1 style="color: rgb(91, 177, 51);">Offered Items</h1>
+    </mat-card-header>
+    <hr>
+    <mat-card class="foodMenu" *ngFor="let item of myItems" style="margin: 3%;">
+        <mat-card-content>
+            <h2>{{item.dish}}</h2>
+            <h3> &#8377; {{item.price}}/-</h3>
+            <button class="edit-btn" mat-raised-button (click)="sendEdit(item)"><mat-icon>edit</mat-icon> Edit</button>&nbsp;&nbsp;
+            <button class="btn-delete" mat-raised-button (click)="dltItem(item.id)"><mat-icon>delete</mat-icon>Delete</button>
+        </mat-card-content>
+
+        <hr>
+    </mat-card>
+
+
+
+</mat-card>

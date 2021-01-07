@@ -1,0 +1,14 @@
+<body style="height: 60%; background-size: contain;z-index: -1; background: center fixed;"
+[ngStyle]="{ 'background-image': 'url('+newBackground+')'}">
+<app-topbar></app-topbar>
+<div style="display: flex;">
+        
+    <div style="margin: 6% 3%;">
+        <router-outlet ></router-outlet>
+    </div> 
+        
+      <div style="flex-grow: 2;"><app-myproductlist></app-myproductlist></div>
+      <div style="flex-grow: 1;"><app-chefsorder></app-chefsorder></div>
+   
+  </div>
+  </body>

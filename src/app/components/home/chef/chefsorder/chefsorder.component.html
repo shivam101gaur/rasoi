@@ -1,0 +1,48 @@
+<mat-card class="main-card" style="margin-right: 3%;">
+    <mat-card-header>
+        <span class="example-spacer"></span>
+        <h1 style="color: rgb(255, 0, 0);">Pending Orders&nbsp;&nbsp;&nbsp;<mat-icon (click)="location.reload()" style="cursor: pointer;color: blue;margin-top: 10%;" >cached</mat-icon> </h1>
+        <span class="example-spacer"></span>
+    </mat-card-header>
+    <hr>
+</mat-card>
+
+<br><br>
+
+<div  *ngFor="let order of orders" style="background-color: rgba(253, 198, 16, 0.911); padding: 1px;border-radius: 1%;margin-right: 3%;">
+   
+    <mat-card *ngIf="order.status" style="background-color: rgb(255, 253, 220);margin: 2%;">
+        <mat-card-content>
+            <h2>Order Id: {{order.id}}</h2>
+            <h3><span style="font-weight: bold;">Customer Name:</span>  {{order.customerName}}</h3>
+            <h3><span style="font-weight: bold;">Item Name:</span>  {{order.foodName}}</h3>
+            <h3><span style="font-weight: bold;">Order Price:</span>  &#8377; {{order.foodPrice}}/-</h3>
+            <button class="btn-dispached" mat-raised-button (click)="dispatch(order)" >Dispatch</button>
+            <hr>
+        </mat-card-content>
+    </mat-card>
+</div>
+<mat-card class="main-card" style="margin-right: 3%;margin-top: 5%;background-color: rgb(255, 255, 255);">
+    <mat-card-header>
+        <span class="example-spacer"></span>
+        <h1 style="color: rgb(91, 177, 51);">Completed Orders</h1>
+        <span class="example-spacer"></span>
+    </mat-card-header>
+    <hr>
+</mat-card>
+<br>
+<div  *ngFor="let order  of orders" style="background-color: rgb(141, 216, 107); padding: 1px;border-radius: 1%;margin-right: 3%;">
+    <mat-card *ngIf="!order.status" style="background-color: white;margin: 2%;">
+        <mat-card-content>
+            <h2>Order Id: {{order.id}}</h2>
+            <h3><span style="font-weight: bold;">Customer Name:</span>  {{order.customerName}}</h3>
+            <h3><span style="font-weight: bold;">Item Name:</span>  {{order.foodName}}</h3>
+            <h3><span style="font-weight: bold;">Order Price:</span>  &#8377; {{order.foodPrice}}/-</h3>
+            <!-- <button class="btn-dispached" mat-raised-button (click)="dispatch(order)" >Dispatch</button> -->
+            <hr>
+        </mat-card-content>
+    </mat-card>
+    
+</div>
+
+

@@ -1,0 +1,19 @@
+.main-card{
+    margin-top: 100px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .btn-dispached{
+    color: rgb(91, 177, 51);
+    transition: 0.3s;
+    padding-left: 30px ;
+    padding-right: 30px ;
+  }
+
+  .btn-dispached:hover{
+    background-color: rgb(91, 177, 51);
+    color: white;
+  }

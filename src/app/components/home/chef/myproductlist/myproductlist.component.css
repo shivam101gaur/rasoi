@@ -1,0 +1,42 @@
+img{
+    height: 100px;
+    width: 100px;
+    float: left
+}
+.title{
+    float: right;
+    margin-left: 50px ;
+}
+
+.main-card{
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+.foodMenu{
+    margin-left: 80px;
+}
+
+.edit-btn{
+    color: rgb(91, 177, 51);
+    transition: 0.3s;
+    padding-left: 30px ;
+    padding-right: 30px ;
+}
+
+.edit-btn:hover{
+    background-color: rgb(91, 177, 51);
+    color: white;
+}
+
+.btn-delete{
+    color: red;
+    transition: 0.3s;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-delete:hover{
+    background-color: red;
+    color: white;
+}

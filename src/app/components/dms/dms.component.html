@@ -1,0 +1,51 @@
+<mat-toolbar>
+    <span>
+        <mat-icon style="font-size: 40px;">device_hub</mat-icon>
+    </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span style="margin-right: 50%;">
+        Drone Management System
+    </span>
+
+    <span style="float: right;margin-right: 2%;color: rgb(53, 189, 199);">Active : {{drones.length}}</span>
+    <span style="color: rgb(255, 115, 0);margin-right: 2%;">Busy : {{ occupiedDrones.length }}</span>
+    <span style="float: right;color: green;">Available : {{drones.length-occupiedDrones.length}}</span>
+</mat-toolbar>
+
+<mat-grid-list rowHeight="35%" [cols]="(drones.length<2)?1:2" style="margin: 4%;" [gutterSize]="'5%'">
+    <mat-grid-tile *ngFor="let drone of drones" colspan=1 rowspan=1
+        [style.background]="(drone.busy)?'#F4D03F ':'#82E0AA'">
+        <mat-card style="width: 70%;">
+            <mat-card-title>
+                Drone {{drone.id}}
+                <span style="float: right;margin-right: 5%;">
+                    <mat-icon *ngIf = "(!drone.busy)" style="font-size: 40px;color: rgba(255, 69, 44, 0.959); cursor: pointer;"
+                        (click)="deleteDrone(drone.id)" title="click to remove this drone">delete</mat-icon>
+                </span>
+            </mat-card-title>
+            <mat-card-subtitle *ngIf="drone.busy">
+                is Occupied to
+                Order:{{drone.orderID}}
+            </mat-card-subtitle>
+            <mat-card-subtitle *ngIf="!drone.busy">
+                is available
+            </mat-card-subtitle>
+            <mat-card-actions style="float: right;">
+
+
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile style="background-color: teal;">
+        <mat-card style="width: 60%">
+            <mat-card-title style="color: grey;">
+
+                <button mat-raised-button (click)="addDrone()"
+                    style="outline: none; cursor: pointer; border: solid;border-radius: 10%; color: chocolate;padding: 2%;padding-bottom: 0%;"
+                    title="click to add a new drone to DB">
+                    <mat-icon>add</mat-icon>
+                    &nbsp;<mat-icon>flight_takeoff</mat-icon>
+                </button>&nbsp; Add New Drone
+            </mat-card-title>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

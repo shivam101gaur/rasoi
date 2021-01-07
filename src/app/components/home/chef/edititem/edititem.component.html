@@ -1,0 +1,19 @@
+<br>
+<mat-card style="width: fit-content;">
+    <mat-card-title>Edit </mat-card-title>
+    <mat-card-subtitle>Food Item</mat-card-subtitle>
+    <form (submit)="editItem(pd_name.value,pd_price.value)">
+        <mat-form-field appearance="outline">
+            <mat-label>Dish Name</mat-label>
+            <input [value]="editableItem.dish" #pd_name type="text" matInput required >
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Dish Price</mat-label>
+            <input [value]="editableItem.price" #pd_price type="number" matInput required placeholder="in Rupees">
+        </mat-form-field>
+        <br>
+
+        <button mat-raised-button color="primary">Save Changes</button>
+    </form>
+</mat-card>

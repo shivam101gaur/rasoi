@@ -1,0 +1,62 @@
+<div style="display: flex; flex-direction: row;width: 100%;height: 100%;background-size: contain; background: no-repeat  center fixed;"
+    [ngStyle]="{ 'background-image': 'url('+newBackground+')'}">
+
+    <div style="width: 45%;flex-grow: 2;"></div>
+    <div style="flex-grow:1;align-self:center; ">
+
+        <mat-card style="width: fit-content;">
+            <mat-card-title style="color: rgb(30, 143, 163);">{{usertype.value}}</mat-card-title>
+            <mat-card-subtitle>LOGIN</mat-card-subtitle>
+            <span style="align-content: flex-end;">
+                <a routerLink="/registration">new user ?</a>
+            </span>
+            <hr>
+            <mat-card-content>
+
+                <form (submit)="validate(uname.value,upass.value,usertype.value);" onsubmit="return false;" >
+                <!-- <form> -->
+                    <br>
+
+
+                    <mat-form-field appearance="outline" style="width: 100%;">
+                        <mat-label>{{usertype.value}} name:</mat-label>
+                        <input #uname type="text" matInput autofocus required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="outline">
+                        <mat-label>password:</mat-label>
+
+                        <input #upass [type]="hide?'password':'text'" matInput required>
+                        <mat-icon matSuffix (click)="hide=!hide" style="cursor:pointer;">
+                            {{!hide?'visibility_off':'visibility'}}</mat-icon>
+
+                    </mat-form-field>
+
+                    <br>
+
+                    <mat-form-field appearance="outline" style="width: 100%;">
+                        <mat-label>I am a </mat-label>
+                        <mat-select #usertype value="Chef">
+                            <mat-option value="Chef">Chef</mat-option>
+                            <mat-option value="Customer">Customer</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-card-actions align="end">
+                        <!-- login button -->
+                        <button #loginbtn mat-raised-button [color]="(usertype.value=='Customer')?'primary':'accent'">
+                            {{usertype.value}} Login
+                        </button>
+
+                        <!-- <button #loginbtn mat-raised-button [color]="(usertype.value=='Customer')?'primary':'accent'"
+                        (click)="validate(uname.value,upass.value,usertype.value)" type="button">
+                            {{usertype.value}} Login
+                        </button> -->
+                    </mat-card-actions>
+                </form>
+            </mat-card-content>
+
+        </mat-card>
+
+    </div>
+</div>
