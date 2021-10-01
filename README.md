@@ -1,4 +1,6 @@
-Thank You for showing interest in the App :)
+# **Rasoi**
+
+Thank You for showing interest in the App 😇
 ********************************************
 
 Rasoi is made mainly on Angular and is a demo Food Ordering App
@@ -22,28 +24,28 @@ open this URL in your browser after running the app to use DMS.
 
 
 
-Note: I would recommend using Chrome Browser
->>localhost:4200/dms
-
-
-# Rasoi
-TO run the app 
->>ng serve -o
-
+## Run the app 
+```bash
+ng serve -o
+```
 You must run a database Server with the app
 Here you can use any one of the following
 
 Note: I would recommend using 1st method (JSON Server) 
 
-1.npm JSON Server
-to create database
->>npm run generate 
-to run JSON server and host the database created above
->>npm run server
-
+### 1.npm JSON Server
+To create database
+```bash
+npm run generate 
+```
+To run JSON server and host the database created above
+```bash
+npm run server
+```
 ---------------------------------------     OR     --------------------------------------------------------------
 
-2.MySql database using SpringBoot Api
+### 2.MySql database using SpringBoot Api
+
 You should have mySql installed on you system and database should be created and populated
 Then open the SpringBoot Directory in SpringBoot tool and run the app
 Here you have to make changes to you "http.service.ts" file present in "src\app\services\http.service.ts" directory
