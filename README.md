@@ -33,7 +33,7 @@ Here you can use any one of the following
 
 Note: I would recommend using 1st method (JSON Server) 
 
-### 1.npm JSON Server
+### 1. [JSON Server](https://www.npmjs.com/package/json-server)
 To create database
 ```bash
 npm run generate 
@@ -44,7 +44,7 @@ npm run server
 ```
 ---------------------------------------     OR     --------------------------------------------------------------
 
-### 2.MySql database using SpringBoot Api
+### 2. MySql database using SpringBoot Api
 
 You should have mySql installed on you system and database should be created and populated
 Then open the SpringBoot Directory in SpringBoot tool and run the app
