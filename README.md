@@ -12,7 +12,7 @@ open this URL in your browser after running the app to use DMS.
 
 **Welcome**       |  **Login**
 :-------------------------:|:-------------------------:
-![App Screenshot](src/assets/screen-shots/welcome.png)|![App Screenshot](src/assets/screen-shots/login.png)
+![App Screenshot](src/assets/screen-shots/1.jfif)|![App Screenshot](src/assets/screen-shots/login.png)
 **Create World**         |  **Join World**
 ![App Screenshot](src/assets/screen-shots/createworld.png)|![App Screenshot](src/assets/screen-shots/joinworld.png)
 **View World**          |  **Chat** 
@@ -176,7 +176,6 @@ getDroneFromCustomerId(id:number){
 
 }
 ```
-==========================================================================
 **************************************************************************
-==========================================================================
+
 
