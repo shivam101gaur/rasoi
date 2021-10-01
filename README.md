@@ -13,11 +13,11 @@ open this URL in your browser after running the app to use DMS.
 **Login**       |  **Login**
 :-------------------------:|:-------------------------:
 ![App Screenshot](src/assets/screen-shots/1.jfif)|![App Screenshot](src/assets/screen-shots/2.jfif)
-**Create World**         |  **Join World**
-![App Screenshot](src/assets/screen-shots/3.jfif)|![App Screenshot](src/assets/screen-shots/4.jfif)
-**View World**          |  **Chat** 
+**Customer Home Page**          |  **Chef Home Page** 
 ![App Screenshot](src/assets/screen-shots/5.jfif)|![App Screenshot](src/assets/screen-shots/6.jfif)
-**Add Members**         |  **View Members** 
+**Customer / Chef Home Page with no orders**         |  **Customer / Chef Home Page with orders**
+![App Screenshot](src/assets/screen-shots/3.jfif)|![App Screenshot](src/assets/screen-shots/4.jfif)
+**Assigned Drones to orders in DMS**         |  **DMS ( Drone Management System )** 
 ![App Screenshot](src/assets/screen-shots/7.jfif)|![App Screenshot](src/assets/screen-shots/8.jfif)
 
 
