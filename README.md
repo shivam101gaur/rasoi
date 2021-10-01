@@ -10,17 +10,16 @@ open this URL in your browser after running the app to use DMS.
 
 ## Screen-Shots
 
-**Welcome**       |  **Login**
+**Login**       |  **Login**
 :-------------------------:|:-------------------------:
-![App Screenshot](src/assets/screen-shots/1.jfif)|![App Screenshot](src/assets/screen-shots/login.png)
+![App Screenshot](src/assets/screen-shots/1.jfif)|![App Screenshot](src/assets/screen-shots/2.jfif)
 **Create World**         |  **Join World**
-![App Screenshot](src/assets/screen-shots/createworld.png)|![App Screenshot](src/assets/screen-shots/joinworld.png)
+![App Screenshot](src/assets/screen-shots/3.jfif)|![App Screenshot](src/assets/screen-shots/4.jfif)
 **View World**          |  **Chat** 
-![App Screenshot](src/assets/screen-shots/worlds.png)|![App Screenshot](src/assets/screen-shots/chat.png)
+![App Screenshot](src/assets/screen-shots/5.jfif)|![App Screenshot](src/assets/screen-shots/6.jfif)
 **Add Members**         |  **View Members** 
-![App Screenshot](src/assets/screen-shots/addmember.png)|![App Screenshot](src/assets/screen-shots/viewmembers.png)
-**Settings** | **About App**
-![App Screenshot](src/assets/screen-shots/settings.png)|![App Screenshot](src/assets/screen-shots/aboutapp.png)
+![App Screenshot](src/assets/screen-shots/7.jfif)|![App Screenshot](src/assets/screen-shots/8.jfif)
+
 
 
 Note: I would recommend using Chrome Browser
