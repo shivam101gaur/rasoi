@@ -8,6 +8,20 @@ Here Chef can sell food
 There is also Drone Management Service (DMS) component to track and manage Drones which are used for Delivery of Food Items 
 open this URL in your browser after running the app to use DMS.
 
+## Screen-Shots
+
+**Welcome**       |  **Login**
+:-------------------------:|:-------------------------:
+![App Screenshot](src/assets/screen-shots/welcome.png)|![App Screenshot](src/assets/screen-shots/login.png)
+**Create World**         |  **Join World**
+![App Screenshot](src/assets/screen-shots/createworld.png)|![App Screenshot](src/assets/screen-shots/joinworld.png)
+**View World**          |  **Chat** 
+![App Screenshot](src/assets/screen-shots/worlds.png)|![App Screenshot](src/assets/screen-shots/chat.png)
+**Add Members**         |  **View Members** 
+![App Screenshot](src/assets/screen-shots/addmember.png)|![App Screenshot](src/assets/screen-shots/viewmembers.png)
+**Settings** | **About App**
+![App Screenshot](src/assets/screen-shots/settings.png)|![App Screenshot](src/assets/screen-shots/aboutapp.png)
+
 
 Note: I would recommend using Chrome Browser
 >>localhost:4200/dms
@@ -40,7 +54,7 @@ Replace the code there with the one given below!!
 http.service.ts
 ==============================================================
 
-
+```bash
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { OrdersComponent } from '../components/home/customer/orders/orders.component';
@@ -161,6 +175,7 @@ getDroneFromCustomerId(id:number){
 
 
 }
+```
 ==========================================================================
 **************************************************************************
 ==========================================================================
