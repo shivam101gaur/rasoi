@@ -176,5 +176,10 @@ getDroneFromCustomerId(id:number){
 }
 ```
 **************************************************************************
+## Developers
+- [Shivam Gaur](https://github.com/shivam101gaur)
+- [Shaishav Kumar](https://github.com/shaishavkumar)
+
+
 
 
